@@ -7,7 +7,7 @@ properties:
     type: "integer"
     example: 1
   category:
-    $ref: "/api_docs/v1/definitions/category.yaml"
+    $ref: "#/definitions/Category"
   name:
     type: "string"
     example: "Golden"

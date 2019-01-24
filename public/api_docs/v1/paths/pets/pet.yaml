@@ -1,0 +1,17 @@
+post:
+  tags:
+  - Pet
+  summary: "Create pet"
+  comsumer:
+  - application/json
+  produces:
+  - application/json
+  parameters:
+  - name: "body"
+    in: "body"
+    required: true
+    schema:
+      $ref: "/api_docs/v1/definitions/pet.yaml"
+  responses:
+    405:
+      description: "Invalid input"
