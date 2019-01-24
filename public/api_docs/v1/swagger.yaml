@@ -27,109 +27,17 @@ tags:
 
 definitions:
   Pet:
-    type: "object"
-    required:
-      - name
-      - photoUrls
-    properties:
-      id:
-        type: "integer"
-        example: 1
-      category:
-        $ref: "#/definitions/Category"
-      name:
-        type: "string"
-        example: "Golden"
-      status:
-        type: "string"
-        enum:
-        - available
-        - pending
-        - sold
-        example: pending
+    $ref: "/api_docs/v1/definitions/pet.yaml"
   Order:
-    type: "object"
-    properties:
-      id:
-        type: "integer"
-        example: 1
-      petId:
-        type: "integer"
-        example: 1
-      quantity:
-        type: "integer"
-        example: 10
-      shipDate:
-        type: "string"
-        example: "2019/12/31"
-      status:
-        type: "string"
-        enum:
-        - placed
-        - approved
-        - delivered
-        example: approved
-      complete:
-        type: "boolean"
-        default: false
-        example: true
+    $ref: "/api_docs/v1/definitions/order.yaml"
   Category:
-    type: "object"
-    properties:
-      id:
-        type: "integer"
-        example: 1
-      name:
-        type: "string"
-        example: "Golden Dog"
+    $ref: "/api_docs/v1/definitions/category.yaml"
   User:
-    type: "object"
-    properties:
-      id:
-        type: "integer"
-        example: 1
-      username:
-        type: "string"
-        example: "John"
-      firstName:
-        type: "string"
-        example: "Smith"
-      email:
-        type: "string"
-        example: "johnsmith@example.com"
-      password:
-        type: "string"
-        example: "example!@#"
-      phone:
-        type: "string"
-        example: "0987058000"
-      userStatus:
-        type: "integer"
-        example: 1
+    $ref: "/api_docs/v1/definitions/user.yaml"
   Tag:
-    type: "object"
-    properties:
-      id:
-        type: "integer"
-        example: 1
-      name:
-        type: "string"
-        name: "Special"
+    $ref: "/api_docs/v1/definitions/tag.yaml"
   ApiResponse:
-    type: "object"
-    properties:
-      id:
-        type: "integer"
-        example: 1
-      code:
-        type: "integer"
-        example: 404
-      type:
-        type: "string"
-        example: "NotFoundResponse"
-      message:
-        type: "string"
-        example: "Object not found"
+    $ref: "/api_docs/v1/definitions/api_response.yaml"
 
 paths:
   /pet:

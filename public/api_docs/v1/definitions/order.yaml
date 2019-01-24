@@ -1,0 +1,25 @@
+type: "object"
+properties:
+  id:
+    type: "integer"
+    example: 1
+  petId:
+    type: "integer"
+    example: 1
+  quantity:
+    type: "integer"
+    example: 10
+  shipDate:
+    type: "string"
+    example: "2019/12/31"
+  status:
+    type: "string"
+    enum:
+    - placed
+    - approved
+    - delivered
+    example: approved
+  complete:
+    type: "boolean"
+    default: false
+    example: true

@@ -1,0 +1,23 @@
+type: "object"
+properties:
+  id:
+    type: "integer"
+    example: 1
+  username:
+    type: "string"
+    example: "John"
+  firstName:
+    type: "string"
+    example: "Athony"
+  email:
+    type: "string"
+    example: "JohnAthony@example.com"
+  password:
+    type: "string"
+    example: "example!@#"
+  phone:
+    type: "string"
+    example: "0987058000"
+  userStatus:
+    type: "integer"
+    example: 1
